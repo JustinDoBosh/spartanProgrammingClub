@@ -3,6 +3,7 @@
 //and return the sum of a + b
 function addFive(){
 	var a = prompt("Enter a number: ");
+	var a = parseInt(a);
 	var b = 5;
 	console.log(a + b);
 }
@@ -42,9 +43,9 @@ function areWeTheSame(value1, value2){
 //Q5: Find the error and fix them
 function accessingObjects(){
 	car = {
-		color: 'blue'
-		year: '2006'
-		price: '$15,000'
+		color: 'blue',
+		year: '2006',
+		price: '$15,000',
 		model: 'sport'
 	};
 

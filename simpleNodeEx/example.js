@@ -1,3 +1,3 @@
-var announce = require('./announce');
+var something = require('./announce');
 
-announce('Node Essential Training');
+something('Welcome to node!');
