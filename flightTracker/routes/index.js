@@ -19,3 +19,27 @@ exports.flight = function(req, res){
   	}
 };
 
+exports.arrived = function(req, res){
+	var number = req.param('number');
+
+	if(typeof flights[number] === 'undefined'){
+  		res.status(404).json({status:'error'});
+  	}else {
+  		flights[number].triggerArrive();
+  		res.json({status: 'done'});
+  	}
+};
+
+exports.list = function(req,res){
+	res.render('list', {title: 'All Flights', flights: flights});
+};
+
+exports.listjson = function(req, res){
+	var flightData = [];
+
+	for(var number in flights){
+		flightData.push(flights[number].getInformation());
+	}
+	res.json(flightData);
+};
+
