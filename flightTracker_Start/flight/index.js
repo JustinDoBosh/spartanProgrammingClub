@@ -1,4 +1,3 @@
-/*
 module.exports = function(info){
 
 	var values = {
@@ -33,4 +32,3 @@ module.exports = function(info){
 	//returns the functions object
 
 };//end of module
-*/

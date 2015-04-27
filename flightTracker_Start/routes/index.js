@@ -1,5 +1,3 @@
-
-/*
 var flights = require('../data');
 var flight = require('../flight');
 
@@ -40,4 +38,4 @@ exports.listjson = function(req, res){
 	}
 	res.json(flightData);
 };
- */
+

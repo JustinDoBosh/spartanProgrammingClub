@@ -1,0 +1,17 @@
+extends layout
+
+block content
+	h1= title
+	div
+		form(action='/routes/addFlight',method='post')
+			label(for='number') Number
+			input(type='text',value='',name='number', id="number")
+			label(for='origin') Origin
+			input(type='text',value='',name='origin', id="origin")
+			label(for='destination') Destination
+			input(type='text',value='',name='destination', id="destination")
+			label(for='departs') Departs
+			input(type='text',value='',name='departs', id="departs")
+			label(for='arrives') Arrives
+			input(type='text',value='',name='arrives', id="arrives")
+			input(type='submit',value='Add Flight')
