@@ -1,12 +1,12 @@
 extends layout
 
 block content
-	h1= title
+	h4="Flight " + number + " has been added!"
 
-	h2="New flight has been added!"
+	p= "Flight Number: " + number
+	p= "Origin: " + origin
+	p= "Destination: " + destination
+	p= "Depature Time: " + departs
+	p= "Arrival Time: " + arrives
 
-	p= number
-	p= origin
-	p= destination
-	p= departs
-	p= arrives
+	a(href="../list") Return to Flight List
