@@ -3,7 +3,7 @@ extends layout
 block content
 	h1= title
 	div
-		form(action='/routes/addFlight',method='post')
+		form(action='/addFlight',method='post')
 			label(for='number') Number
 			input(type='text',value='',name='number', id="number")
 			label(for='origin') Origin
